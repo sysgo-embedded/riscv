@@ -31,16 +31,16 @@
         ]
     },
     "systemLevelInfo": {
-        "architecture": "RISC-V",
-        "processor": "CVA6/QEMU/PolarFire/others",
-        "board": "Genesys2/Chip",
+        "architecture": "x86, ARM v7/v8, SPARC/LEON v8, PowerPC and RISC-V",
+        "processor": "RISC-V: CVA6, QEMU, PolarFire, REBECCA chip, others",
+        "board": "GeneSys2,Chips",
         "SOC": "NA",
         "SWDependencies": "None",
         "requiresSpecializedTool": "No"
     },
     "interfaces": {
         "API": [
-            "System calls"
+            "System calls/hypercalls"
         ],
         "inputArtifacts": [
             {
@@ -49,17 +49,17 @@
             },
             {
                 "artifact": "Applications in partitions",
-                "format": "C"
+                "format": "C or binary"
             }
         ],
         "outputArtifacts": [
             {
                 "artifact": "System image", 
-                "format": "ELF"
+                "format": "ELF or other"
             }
         ]
     },
     "deployment": {
-        "bundle": "Operational software package"
+        "bundle": "Standalone Type 1 hypervisor"
     }
 }
