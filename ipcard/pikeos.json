@@ -40,7 +40,7 @@
     },
     "interfaces": {
         "API": [
-            "Hypercalls"
+            "System calls"
         ],
         "inputArtifacts": [
             {
