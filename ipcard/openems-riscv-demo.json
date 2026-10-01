@@ -1,0 +1,53 @@
+{
+    "schemaVersion": "0.9",
+    "basicInfo": {
+        "ipName": "OpenEMS demonstration",
+        "version": "1.0",
+        "project": "ISOLDE",
+        "workItem": "5.3",
+        "trl": "TRL-4",
+        "status": "Demonstrated",
+        "license": "Other",
+        "ipType": {
+            "category": [
+                "Software"
+            ],
+            "domain": [
+                "Safety",
+                "Security"
+            ],
+            "comment": "Demonstration of OpenEMS on Linux on Java on CVA6"
+        },
+        "repositoryURL": "https://zenodo.org/records/18164662",
+        "provider": [
+            {
+                "organizationName": "SYSGO GmbH",
+                "organizationURL": "www.sysgo.com",
+                "organizationAlias": [
+                    "SYSGO"
+                ]
+            }
+        ]
+    },
+    "systemLevelInfo": {
+        "architecture": "RISC-V",
+        "processor": "CVA6",
+        "isaExtension": "",
+        "board": "Genesys-2",
+        "SOC": "NA",
+        "SWDependencies": "Linux and Java",
+        "requiresSpecializedTool": "No"
+    },
+    "interfaces": {
+        "API": [
+            "Console/Serial port"
+        ],
+        "inputArtifacts": [
+        ],
+        "outputArtifacts": [
+        ]
+    },
+    "deployment": {
+        "bundle": " software package"
+    }
+}
