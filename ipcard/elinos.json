@@ -1,0 +1,65 @@
+{
+    "schemaVersion": "0.9",
+    "basicInfo": {
+        "ipName": "ELinOS",
+        "version": "8.0",
+        "project": "TRISTAN",
+        "workItem": "4.3.2",
+        "trl": "TRL-9",
+        "status": "Production-ready",
+        "license": "Proprietary",
+        "ipType": {
+            "category": [
+                "Software",
+                "Operating System"
+            ],
+            "domain": [
+                "Safety",
+                "Security"
+            ],
+            "comment": "Industrial Linux for secure and sovereign embedded systems"
+        },
+        "repositoryURL": "https://www.sysgo.com/elinos",
+        "provider": [
+            {
+                "organizationName": "SYSGO GmbH",
+                "organizationURL": "www.sysgo.com",
+                "organizationAlias": [
+                    "SYSGO"
+                ]
+            }
+        ]
+    },
+    "systemLevelInfo": {
+        "architecture": "RISC-V,x86,ARM,PowerPC",
+        "processor": "(On RISC-V): PikeOS,QEMU,PolarFire,others",
+        "board": "Chip/FPGA",
+        "SOC": "NA",
+        "SWDependencies": "None",
+        "requiresSpecializedTool": "No"
+    },
+    "interfaces": {
+        "API": [
+            "System calls"
+        ],
+        "inputArtifacts": [
+            {
+                "artifact": "ELinOS configuration",
+                "format": "XML"
+            },
+            {
+                "artifact": "Applications",
+                "format": "C or binary"
+            }
+        ],
+        "outputArtifacts": [
+            {
+                "artifact": "System image", 
+                "format": "ELF or other"
+            }
+        ]
+    },
+    "deployment": {
+        "bundle": "Standalone or a PikeOS partition"
+    }
+}
